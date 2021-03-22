@@ -26,23 +26,6 @@ body,html,*{
     font-family: 'vazir';
     direction: rtl;
 }
-.main-head{
-    width: 40%;
-    height: 40px;
-    background-color: #efefef;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    @include margin-padding(20px,20px ,0,20px ,true);
-    @include margin-padding(8px,8px,8px,8px,false);
-    border-radius: 2px;
-    border:1px solid orange;
-    a{
-        text-decoration: none;
-        color: teal;
-    }
-   
-}
 .head{
     width: 40%;
     height: 40px;
