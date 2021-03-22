@@ -5,6 +5,20 @@
     font-weight: normal;
     font-style: normal;
 }
+@mixin margin-padding($top,$right,$bottom,$left,$which:false) {
+    @if($which){
+        margin-top: $top;
+        margin-right:$right;
+        margin-bottom:$bottom;
+        margin-left:$left;
+    }
+    @else{
+       padding-top: $top;
+       padding-right: $right;
+       padding-bottom:$bottom;
+       padding-left: $left;
+    }  
+}
 /* Main Styles */
 body,html,*{
     padding: 0;
@@ -12,15 +26,48 @@ body,html,*{
     font-family: 'vazir';
     direction: rtl;
 }
-.head{
+.main-head{
     width: 40%;
-    height: 50px;
+    height: 40px;
     background-color: #efefef;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include margin-padding(20px,20px ,0,20px ,true);
+    @include margin-padding(8px,8px,8px,8px,false);
+    border-radius: 2px;
+    border:1px solid orange;
     a{
         text-decoration: none;
         color: teal;
     }
+   
+}
+.head{
+    width: 40%;
+    height: 40px;
+    background-color: #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include margin-padding(0,20px ,0,20px ,true);
+    @include margin-padding(8px,8px,8px,8px,false);
+    border:1px solid orange;
+    border-radius: 2px;
+    a{
+        text-decoration: none;
+        color: teal;
+    }
+
+}
+.body{
+    width: 40%;
+    height: 80px;
+    padding: 8px;
+    background-color: rgb(219, 99, 99);
+    color: whitesmoke;
+    @include margin-padding(0,20px ,0 ,0 ,true);
+    @include margin-padding(8px,8px,8px,8px,false);
+    display: none;
+
 }
