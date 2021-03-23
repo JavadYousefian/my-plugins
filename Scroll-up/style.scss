@@ -3,7 +3,24 @@ body{
     padding: 0;
 }
 .scroll{
-    width: 100px;
-    height: 40px;
-    background-color: rgb(255, 0, 0);
+    width: 50px;
+    height: 48px;
+    background-color: rgb(231, 100, 100);
+    position: fixed;
+    right: 12px;
+    bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .material-icons{
+        font-size: 40px;
+        color: #ffff;
+    }
+    &:hover{
+        background-color: rgb(238, 41, 41);
+        cursor: pointer;
+    }
+
+
 }
