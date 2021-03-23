@@ -1,8 +1,8 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,AAAA,IAAI,AAAA,CACA,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACb,AACD,AAAA,OAAO,AAAA,CACH,KAAK,CAAE,KAAK,CACZ,MAAM,CAAE,IAAI,CACZ,gBAAgB,CAAE,GAAc,CACnC",
     "sources": [
-        "../Scroll-up/style.scss"
+        "../style.scss"
     ],
     "names": [],
     "file": "style.min.css"
