@@ -1,7 +1,16 @@
+@font-face{
+    font-family: 'vazir';
+    src: url(Fonts/Vazir-FD-WOL.woff) format("woff"),
+    url(Fonts/Vazir-FD-WOL.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
 body,*{
     direction: rtl;
     margin: 0;
     padding: 0;
+    font-family: 'vazir';
 }
 @mixin margin-padding($top,$right,$bottom,$left,$margin:true) {
     @if($margin){
@@ -21,12 +30,69 @@ body,*{
     @include margin-padding(10px,0,10px,0);
 }
 .password{
-    @include margin-padding(0,4px,0,0);
+    @include margin-padding(0,14px,0,0);
 }
 .modal{
     width: 400px;
-    height: 200px;
-    background-color: slategray;
+    height: 150px;
+    background-color: rgb(245, 89, 141);
     text-align: center;
-    margin: 0 auto;
+    margin:auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    z-index: 2;
+    display: none;
+    a{
+        text-decoration: none;
+        margin: 12px;
+        color: whitesmoke;
+        
+    }
+    input[type=password]{
+        @include margin-padding(0,0 ,12px ,0 ,true )
+    }
+    input{
+        @include margin-padding(7px,7px ,7px ,7px ,false);
+        width: 50%;
+        border-radius: 4px;
+        background-color: rgb(235, 159, 60);
+        border: 1px solid black;
+        outline: none;
+        box-shadow: 2px 2px 1px 1px rgb(31, 30, 30);
+        color: whitesmoke;
+    }
+    label{
+        background-color: rgb(255, 85, 85);
+        border-radius: 5px;
+        box-shadow: 2px 2px 1px 1px rgb(31, 30, 30);
+        
+    }
+    input::-webkit-input-placeholder{
+        color: whitesmoke;
+    }
+   
+}
+.background{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.664);
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    display: none;
+}
+button{
+    background-color: blueviolet;
+    color: whitesmoke;
+    width: 100px;
+    height: 50px;
+    outline: none;
+    margin-right: 50%;
+    margin-top: 50px;
+    border-radius: 5px;
+    cursor: pointer;
 }
