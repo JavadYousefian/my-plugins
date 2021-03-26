@@ -1,1 +1,28 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body, * {
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+}
+
+.username {
+  margin-top: 10px;
+  margin-right: 0;
+  margin-bottom: 10px;
+  margin-left: 0;
+}
+
+.password {
+  margin-top: 0;
+  margin-right: 4px;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.modal {
+  width: 400px;
+  height: 200px;
+  background-color: slategray;
+  text-align: center;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=style.css.map */

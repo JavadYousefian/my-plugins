@@ -1,0 +1,32 @@
+body,*{
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+}
+@mixin margin-padding($top,$right,$bottom,$left,$margin:true) {
+    @if($margin){
+        margin-top: $top;
+        margin-right: $right;
+        margin-bottom: $bottom;
+        margin-left: $left;
+
+    }@else{
+        padding-top: $top;
+        padding-right: $right;
+        padding-bottom: $bottom;
+        padding-left: $left;
+    }
+}
+.username{
+    @include margin-padding(10px,0,10px,0);
+}
+.password{
+    @include margin-padding(0,4px,0,0);
+}
+.modal{
+    width: 400px;
+    height: 200px;
+    background-color: slategray;
+    text-align: center;
+    margin: 0 auto;
+}
